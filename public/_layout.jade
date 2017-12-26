@@ -1,0 +1,38 @@
+<!-- Copyright 2017 Kevin Guay -->
+<!-- If you wish to copy and redistribute any part of this website, please contact the webmaster. -->
+<!-- -->
+<!-- -->
+
+doctype html
+
+html
+  head
+    meta(http-equiv='Content-type', content='text/html; charset=utf-8')
+
+    meta(name='viewport', content='width=device-width')
+    title #{title}
+    
+    // Metadata
+    // <meta name="viewport" content="width=device-width, initial-scale=1">
+    meta(name='keywords', content='minimalist, minimalist programmer, programmer, minimalistprogrammer, Kevin Guay, Kevin, Guay, Kevin C Guay, blog, minimalistblog, programmerblog, software development, software engineering, programming, it, information technology, maine, brunswick, boothbay, computing, resume, bio, personal, contact, Bigelow, Bigelow Laboratory for Ocean Science')
+    meta(name='description', content='The Minimalist Programmer is a blog covering dev-ops, software engineering, programming, IT, and more.')
+    meta(name='author', content='Kevin Guay')
+  
+  // FavIcon
+  //- link(rel='icon', type='image/x-icon', href='/favicon.ico')
+  
+  != partial("_include/_css")
+  != partial("_include/_js")
+  // != partial("_include/_google")
+  
+
+body#index
+  != partial("_include/_header")
+  
+  .main
+    .container#main-container
+      != yield
+    
+  // != partial("_include/_footer")
+  
+  
